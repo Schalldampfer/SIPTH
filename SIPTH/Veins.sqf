@@ -15,6 +15,7 @@ _positions = selectBestPlaces [_center, _radius, "forest * 0.9 + meadow + trees 
 	_veh enableSimulation false;
 	_veh setVariable ["ObjectID","1",true];
 	diag_log format ["[SIPTH]: Spawning a vein at %1",_pos];
+	_veh setVectorUp surfaceNormal _pos;
 } forEach _positions;
 
 //Spawn shore objcts
@@ -26,6 +27,7 @@ for "_x" from 1 to ST_numBoats do {
 	_veh enableSimulation false;
 	_veh setVariable ["ObjectID","1",true];
 	diag_log format ["[SIPTH]: Spawning a boat at %1",_pos];
+	_veh setVectorUp surfaceNormal _pos;
 };
 
 //Spawn graves with cross
