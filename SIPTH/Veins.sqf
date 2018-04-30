@@ -38,7 +38,7 @@ _positions = selectBestPlaces [_center, _radius, "trees - (sea + houses)", 10, S
 	_grave = createVehicle ["Grave",_pos,[],0,"CAN_COLLIDE"];
 	_grave setPos [(_pos select 0) + 1, _pos select 1];
 	_grave setVariable ["ObjectID","1",true];
-	_crossclass = ["GraveCross1","GraveCross1","GraveCross1","GraveCross2","GraveCross2","GraveCrossHelmet"] call BIS_fnc_selectRandom;
+	_crossclass = ST_Graves call BIS_fnc_selectRandom;
 	_cross = createVehicle [_crossclass,_pos,[],0,"CAN_COLLIDE"];
 	_cross setPos [(_pos select 0) + 1, (_pos select 1) - 1.2];
 	_cross setVariable ["ObjectID","1",true];
