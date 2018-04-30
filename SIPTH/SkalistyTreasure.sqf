@@ -151,6 +151,8 @@ while {ST_marker_island && (ST_count < _num)} do {
 	deleteMarker _dots;
 };
 
+while {!ST_marker_island && (ST_count < _num)} do { sleep 100; };
+
 //Message
 if (ST_radio) then {
 	RemoteMessage = ["radio","[RADIO] All treasures are found!"];
