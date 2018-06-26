@@ -49,7 +49,7 @@ _Monitor = {
 	ST_count = ST_count + 1;
 
 	if (ST_radio) then {
-		RemoteMessage = ["radio","[RADIO] Someone has found one of the treasures!"];
+		RemoteMessage = ["radio","Someone has found one of the treasures!"];
 		publicVariable "RemoteMessage";
 	};
 
@@ -104,7 +104,7 @@ _fCrate = {
 
 //Message
 if (ST_radio) then {
-	RemoteMessage = ["radio","[RADIO] Pirates have buried their treasures in the island! Time to search for it!"];
+	RemoteMessage = ["radio","Pirates have buried their treasures in the island! Time to search for it!"];
 	publicVariable "RemoteMessage";
 };
 
@@ -155,7 +155,7 @@ while {!ST_marker_island && (ST_count < _num)} do { sleep 100; };
 
 //Message
 if (ST_radio) then {
-	RemoteMessage = ["radio","[RADIO] All treasures are found!"];
+	RemoteMessage = ["radio","All treasures are found!"];
 	publicVariable "RemoteMessage";
 };
 diag_log "[SIPTH]: All crates are found";
