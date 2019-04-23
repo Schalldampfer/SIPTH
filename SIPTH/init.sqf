@@ -46,7 +46,7 @@ ST_numBoats = 2 + floor(random 8);//The number of boats to spawn on the shore
 ST_numGraves = ceil(random 10);//The number of graves on the island
 ST_Veins = ["Gold_Vein_DZE","Silver_Vein_DZE","Iron_Vein_DZE","Supply_Crate_DZE","Mass_grave_DZ"];//Array of Veins
 ST_Boats = ["Land_BoatSmall_2b","Land_BoatSmall_2a","Land_BoatSmall_1"];//Array of Boats
-ST_Graves = ["GraveCross1","GraveCross1","GraveCross1","GraveCross2","GraveCross2","GraveCrossHelmet"];//Array of Grave crosses
+ST_Graves = ["GraveCross1","GraveCross1","GraveCross1","GraveCross2","GraveCross2","GraveCrossHelmet","Land_Church_tomb_1","Land_Church_tomb_2","Land_Church_tomb_3"];//Array of Grave crosses
 
 /////////////////////////
 ////Load main objects////
