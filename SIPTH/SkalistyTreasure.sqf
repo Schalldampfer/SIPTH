@@ -144,7 +144,7 @@ while {ST_marker_island && (ST_count < _num)} do {
 	_area setMarkerSize [650, 450];
 	_dots = createMarker ["SkalistyCrate_dot", [13578.3, 3105.64]];
 	_dots setMarkerText ST_marker_title;
-	_dots setMarkerType "mil_dot";
+	_dots setMarkerType "hd_dot";
 	_dots setMarkerColor "ColorBlack";
 	sleep 100;
 	deleteMarker _area;
