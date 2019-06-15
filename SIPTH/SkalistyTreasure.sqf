@@ -161,3 +161,5 @@ if (ST_radio) then {
 	publicVariable "RemoteMessage";
 };
 diag_log "[SIPTH]: All crates are found";
+
+ST_clear_marker = false;
