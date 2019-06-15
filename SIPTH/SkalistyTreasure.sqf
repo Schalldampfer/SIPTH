@@ -36,7 +36,7 @@ _Monitor = {
 		{
 			if((isPlayer _x) && (_x distance _crate <= 3)) then {
 				_visited = false;
-				diag_log format["[SIPTH]: %1 has cleard crate at %2",name _x,mapGridPosition _crate];
+				diag_log format["[SIPTH]: %1 has cleard crate at %2",_x call fa_plr2str,mapGridPosition _crate];
 			};
 		} forEach playableUnits;
 	};
