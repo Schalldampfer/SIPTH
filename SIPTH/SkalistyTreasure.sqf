@@ -120,6 +120,7 @@ _positions = selectBestPlaces [[13578.3, 3105.64, 0], 700, "forest * 0.9 + meado
 	_crate = createVehicle [ST_crate_Type, (_x select 0), [], 0, "NONE"];
 	_crate setDir (random 360);
 	_crate setVectorUp surfaceNormal position _crate;
+	_crate enableSimulation false;
 
 	//Save crate
 	_objectID = str(round(random 999999));
